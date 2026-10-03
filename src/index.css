@@ -8,10 +8,19 @@
     --font-script: 'Alex Brush', 'Noto Serif Ethiopic', cursive;
   }
 
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: var(--font-sans);
     background-color: #07040a;
     color: #fce7f3;
+    overflow-x: hidden;
+    padding-bottom: env(safe-area-inset-bottom);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
